@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Mar 20 16:05:15 2025
+# Process ID: 26700
+# Current directory: D:/EECE351/Lab/Lab7/Lab7.runs/fpga_hw_ilmb_v10_0_synth_1
+# Command line: vivado.exe -log fpga_hw_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_hw_ilmb_v10_0.tcl
+# Log file: D:/EECE351/Lab/Lab7/Lab7.runs/fpga_hw_ilmb_v10_0_synth_1/fpga_hw_ilmb_v10_0.vds
+# Journal file: D:/EECE351/Lab/Lab7/Lab7.runs/fpga_hw_ilmb_v10_0_synth_1\vivado.jou
+# Running On: Thanh_Vo, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 8, Host memory: 16852 MB
+#-----------------------------------------------------------
+source fpga_hw_ilmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1377.539 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/EECE351/Lab/ip_repo/pmod_enc_fsm_VHDL_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/EECE351/Lab/ip_repo/alarm_timer_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'd:/EECE351/Lab/ip_repo/alarm_timer_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/EECE351/Lab/ip_repo/alarm_timer_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP fpga_hw_ilmb_v10_0, cache-ID = 2ce22cfde971c0de.
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 20 16:05:30 2025...

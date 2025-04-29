@@ -1,0 +1,852 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Apr  1 01:45:06 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_encoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_encoder_0_0 (xilinx.com:user:pmod_encoder:1.0) from (Rev. 15) to (Rev. 16)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Apr  1 00:57:07 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_encoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_encoder_0_0 (xilinx.com:user:pmod_encoder:1.0) from (Rev. 13) to (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Apr  1 00:18:43 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_encoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_encoder_0_0 (xilinx.com:user:pmod_encoder:1.0) from (Rev. 12) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Apr  1 00:03:47 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_encoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_encoder_0_0 (xilinx.com:user:pmod_encoder:1.0) from (Rev. 11) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 31 23:44:06 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_encoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_encoder_0_0 (xilinx.com:user:pmod_encoder:1.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 31 23:07:24 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_encoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_encoder_0_0 (xilinx.com:user:pmod_encoder:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 31 22:53:47 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_encoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_encoder_0_0 (xilinx.com:user:pmod_encoder:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 31 22:15:57 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_encoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_encoder_0_0 (xilinx.com:user:pmod_encoder:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 31 21:09:21 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_encoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_encoder_0_0 (xilinx.com:user:pmod_encoder:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 31 20:56:41 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_encoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_encoder_0_0 (xilinx.com:user:pmod_encoder:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 31 20:39:27 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_encoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_encoder_0_0 (xilinx.com:user:pmod_encoder:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 31 20:32:40 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_encoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_encoder_0_0 (xilinx.com:user:pmod_encoder:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 31 18:59:19 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_encoder_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of fpga_hw_pmod_encoder_0_0 (xilinx.com:user:pmod_encoder:1.0) from (Rev. 1) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'fpga_hw_pmod_encoder_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'a'
+
+-Upgrade has added port 'b'
+
+-Upgrade has added port 'btn'
+
+-Upgrade has added port 'sw'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 27 16:04:05 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 29) to (Rev. 30)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 27 15:49:17 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 28) to (Rev. 29)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 27 15:31:36 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 27) to (Rev. 28)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 27 14:49:05 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 26) to (Rev. 27)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 27 14:33:08 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 25) to (Rev. 26)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 27 13:04:34 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 24) to (Rev. 25)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 27 12:47:44 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 23) to (Rev. 24)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 27 12:27:01 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 22) to (Rev. 23)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 27 11:44:16 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 21) to (Rev. 22)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 27 11:37:43 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 19) to (Rev. 21)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 27 11:21:05 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 18) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 27 11:05:17 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 17) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 27 10:34:09 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 16) to (Rev. 17)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 27 00:04:18 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 15) to (Rev. 16)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar 26 22:46:43 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 14) to (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar 26 22:27:50 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 13) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar 26 22:11:10 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 12) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar 26 21:46:47 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 11) to (Rev. 12)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'fpga_hw_pmod_enc_fsm_VHDL_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'a1'
+
+-Upgrade has removed port 'b1'
+
+-Upgrade has removed port 'sw1'
+
+-Upgrade has added port 'a'
+
+-Upgrade has added port 'b'
+
+-Upgrade has added port 'sw'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar 26 21:05:12 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Mar 25 16:58:25 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0 (Rev. 10)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Mar 25 16:09:33 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Mar 25 13:50:07 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 24 18:12:28 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 24 18:11:31 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 20 15:54:03 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_pmod_enc_fsm_VHDL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_pmod_enc_fsm_VHDL_0_0 (xilinx.com:user:pmod_enc_fsm_VHDL:1.0) from (Rev. 5) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar 19 18:36:53 2025
+| Host         : Thanh_Vo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_hw_alarm_timer_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_hw_alarm_timer_0_1 (xilinx.com:user:alarm_timer:1.0) from (Rev. 19) to (Rev. 20)
+

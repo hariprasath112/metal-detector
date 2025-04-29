@@ -1,0 +1,21 @@
+
+*** Running vivado
+    with args -log fpga_hw_ilmb_v10_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_hw_ilmb_v10_0.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source fpga_hw_ilmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1377.539 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/EECE351/Lab/ip_repo/pmod_enc_fsm_VHDL_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/EECE351/Lab/ip_repo/alarm_timer_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'd:/EECE351/Lab/ip_repo/alarm_timer_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/EECE351/Lab/ip_repo/alarm_timer_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP fpga_hw_ilmb_v10_0, cache-ID = 2ce22cfde971c0de.
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 20 16:05:30 2025...

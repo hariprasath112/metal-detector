@@ -1,0 +1,532 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Apr  1 01:49:14 2025
+# Process ID: 31748
+# Current directory: D:/EECE351/Lab/Lab7/Lab7.runs/synth_1
+# Command line: vivado.exe -log fpga_hw_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_hw_wrapper.tcl
+# Log file: D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/fpga_hw_wrapper.vds
+# Journal file: D:/EECE351/Lab/Lab7/Lab7.runs/synth_1\vivado.jou
+# Running On: Thanh_Vo, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 8, Host memory: 16852 MB
+#-----------------------------------------------------------
+source fpga_hw_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/EECE351/Lab/ip_repo/pmod_encoder_1.0'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'd:/EECE351/Lab/ip_repo/pmod_encoder_1.0/pmod_encoder_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'd:/EECE351/Lab/ip_repo/pmod_encoder_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/EECE351/Lab/ip_repo/pmod_encoder_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/EECE351/Lab/ip_repo/pmod_enc_fsm_VHDL_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/EECE351/Lab/ip_repo/alarm_timer_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'd:/EECE351/Lab/ip_repo/alarm_timer_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/EECE351/Lab/ip_repo/alarm_timer_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1407.516 ; gain = 0.000
+Command: read_checkpoint -auto_incremental -incremental D:/EECE351/Lab/Lab7/Lab7.srcs/utils_1/imports/synth_1/fpga_hw_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/EECE351/Lab/Lab7/Lab7.srcs/utils_1/imports/synth_1/fpga_hw_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top fpga_hw_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 40304
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1407.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_wrapper' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/hdl/fpga_hw_wrapper.vhd:35]
+INFO: [Synth 8-3491] module 'fpga_hw' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:2778' bound to instance 'fpga_hw_i' of component 'fpga_hw' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/hdl/fpga_hw_wrapper.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:2803]
+INFO: [Synth 8-3491] module 'fpga_hw_alarm_timer_0_1' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_alarm_timer_0_1_stub.vhdl:5' bound to instance 'alarm_timer_0' of component 'fpga_hw_alarm_timer_0_1' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3423]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_alarm_timer_0_1' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_alarm_timer_0_1_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'fpga_hw_axi_gpio_0_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'fpga_hw_axi_gpio_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3447]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_axi_gpio_0_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'fpga_hw_axi_gpio_1_1' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_gpio_1_1_stub.vhdl:5' bound to instance 'axi_gpio_1' of component 'fpga_hw_axi_gpio_1_1' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3471]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_axi_gpio_1_1' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_gpio_1_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'fpga_hw_axi_gpio_2_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_gpio_2_0_stub.vhdl:5' bound to instance 'axi_gpio_2' of component 'fpga_hw_axi_gpio_2_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3494]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_axi_gpio_2_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_gpio_2_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'fpga_hw_axi_gpio_3_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_gpio_3_0_stub.vhdl:5' bound to instance 'axi_gpio_3' of component 'fpga_hw_axi_gpio_3_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3520]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_axi_gpio_3_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_gpio_3_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'fpga_hw_axi_uartlite_0_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'fpga_hw_axi_uartlite_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3543]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_axi_uartlite_0_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'fpga_hw_clk_wiz_1_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'fpga_hw_clk_wiz_1_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3568]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_clk_wiz_1_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_clk_wiz_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'fpga_hw_mdm_1_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'fpga_hw_mdm_1_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3575]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_mdm_1_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'fpga_hw_microblaze_0_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'fpga_hw_microblaze_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3588]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_microblaze_0_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_microblaze_0_0_stub.vhdl:63]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_microblaze_0_axi_periph_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1695]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_165VDBW' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_165VDBW' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_4J30QN' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_4J30QN' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_IT4GSB' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_IT4GSB' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1II4NG8' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:360]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1II4NG8' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:360]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_1RJB6R7' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:461]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_1RJB6R7' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:461]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_RKGER4' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:566]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_RKGER4' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:566]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_DJ0S38' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:673]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_DJ0S38' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:673]
+INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_1EVYJJR' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:778]
+INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_1EVYJJR' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:778]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_4NPOKG' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1447]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_4NPOKG' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1447]
+INFO: [Synth 8-3491] module 'fpga_hw_xbar_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'fpga_hw_xbar_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:2605]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_xbar_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'fpga_hw_microblaze_0_axi_periph_0' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1695]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_EP2YZG' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:868]
+INFO: [Synth 8-3491] module 'fpga_hw_dlmb_bram_if_cntlr_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'fpga_hw_dlmb_bram_if_cntlr_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1082]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_dlmb_bram_if_cntlr_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'fpga_hw_dlmb_v10_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'fpga_hw_dlmb_v10_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1136]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_dlmb_v10_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'fpga_hw_ilmb_bram_if_cntlr_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'fpga_hw_ilmb_bram_if_cntlr_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1164]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_ilmb_bram_if_cntlr_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'fpga_hw_ilmb_v10_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'fpga_hw_ilmb_v10_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1218]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_ilmb_v10_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'fpga_hw_lmb_bram_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'fpga_hw_lmb_bram_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1246]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_lmb_bram_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_lmb_bram_0_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_EP2YZG' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:868]
+INFO: [Synth 8-3491] module 'fpga_hw_pmod_encoder_0_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_pmod_encoder_0_0_stub.vhdl:5' bound to instance 'pmod_encoder_0' of component 'fpga_hw_pmod_encoder_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3849]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_pmod_encoder_0_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_pmod_encoder_0_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'fpga_hw_rst_clk_wiz_1_100M_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'fpga_hw_rst_clk_wiz_1_100M_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3877]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_rst_clk_wiz_1_100M_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'fpga_hw_xadc_wiz_0_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_xadc_wiz_0_0_stub.vhdl:5' bound to instance 'xadc_wiz_0' of component 'fpga_hw_xadc_wiz_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3890]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_xadc_wiz_0_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_xadc_wiz_0_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'fpga_hw_xlconcat_0_0' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlconcat_0_0/synth/fpga_hw_xlconcat_0_0.v:53' bound to instance 'xlconcat_0' of component 'fpga_hw_xlconcat_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3923]
+INFO: [Synth 8-6157] synthesizing module 'fpga_hw_xlconcat_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlconcat_0_0/synth/fpga_hw_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_hw_xlconcat_0_0' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlconcat_0_0/synth/fpga_hw_xlconcat_0_0.v:53]
+INFO: [Synth 8-3491] module 'fpga_hw_xlslice_0_1' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_0_1/synth/fpga_hw_xlslice_0_1.v:53' bound to instance 'xlslice_0' of component 'fpga_hw_xlslice_0_1' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3931]
+INFO: [Synth 8-6157] synthesizing module 'fpga_hw_xlslice_0_1' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_0_1/synth/fpga_hw_xlslice_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_hw_xlslice_0_1' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_0_1/synth/fpga_hw_xlslice_0_1.v:53]
+INFO: [Synth 8-3491] module 'fpga_hw_xlslice_1_1' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_1_1/synth/fpga_hw_xlslice_1_1.v:53' bound to instance 'xlslice_1' of component 'fpga_hw_xlslice_1_1' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3936]
+INFO: [Synth 8-6157] synthesizing module 'fpga_hw_xlslice_1_1' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_1_1/synth/fpga_hw_xlslice_1_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_hw_xlslice_1_1' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_1_1/synth/fpga_hw_xlslice_1_1.v:53]
+INFO: [Synth 8-3491] module 'fpga_hw_xlslice_2_0' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_2_0/synth/fpga_hw_xlslice_2_0.v:53' bound to instance 'xlslice_2' of component 'fpga_hw_xlslice_2_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3941]
+INFO: [Synth 8-6157] synthesizing module 'fpga_hw_xlslice_2_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_2_0/synth/fpga_hw_xlslice_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_hw_xlslice_2_0' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_2_0/synth/fpga_hw_xlslice_2_0.v:53]
+INFO: [Synth 8-3491] module 'fpga_hw_xlslice_3_0' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_3_0/synth/fpga_hw_xlslice_3_0.v:53' bound to instance 'xlslice_3' of component 'fpga_hw_xlslice_3_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3946]
+INFO: [Synth 8-6157] synthesizing module 'fpga_hw_xlslice_3_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_3_0/synth/fpga_hw_xlslice_3_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_hw_xlslice_3_0' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_3_0/synth/fpga_hw_xlslice_3_0.v:53]
+INFO: [Synth 8-3491] module 'fpga_hw_xlslice_4_1' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_4_1/synth/fpga_hw_xlslice_4_1.v:53' bound to instance 'xlslice_4' of component 'fpga_hw_xlslice_4_1' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3951]
+INFO: [Synth 8-6157] synthesizing module 'fpga_hw_xlslice_4_1' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_4_1/synth/fpga_hw_xlslice_4_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_hw_xlslice_4_1' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_4_1/synth/fpga_hw_xlslice_4_1.v:53]
+INFO: [Synth 8-3491] module 'fpga_hw_xlslice_5_1' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_5_1/synth/fpga_hw_xlslice_5_1.v:53' bound to instance 'xlslice_5' of component 'fpga_hw_xlslice_5_1' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3956]
+INFO: [Synth 8-6157] synthesizing module 'fpga_hw_xlslice_5_1' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_5_1/synth/fpga_hw_xlslice_5_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized3' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized3' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_hw_xlslice_5_1' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_5_1/synth/fpga_hw_xlslice_5_1.v:53]
+INFO: [Synth 8-3491] module 'fpga_hw_xlslice_6_0' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_6_0/synth/fpga_hw_xlslice_6_0.v:53' bound to instance 'xlslice_6' of component 'fpga_hw_xlslice_6_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3961]
+INFO: [Synth 8-6157] synthesizing module 'fpga_hw_xlslice_6_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_6_0/synth/fpga_hw_xlslice_6_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized4' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized4' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_hw_xlslice_6_0' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_6_0/synth/fpga_hw_xlslice_6_0.v:53]
+INFO: [Synth 8-3491] module 'fpga_hw_xlslice_7_0' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_7_0/synth/fpga_hw_xlslice_7_0.v:53' bound to instance 'xlslice_7' of component 'fpga_hw_xlslice_7_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3966]
+INFO: [Synth 8-6157] synthesizing module 'fpga_hw_xlslice_7_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_7_0/synth/fpga_hw_xlslice_7_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized5' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized5' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_hw_xlslice_7_0' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlslice_7_0/synth/fpga_hw_xlslice_7_0.v:53]
+INFO: [Synth 8-256] done synthesizing module 'fpga_hw' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:2803]
+INFO: [Synth 8-256] done synthesizing module 'fpga_hw_wrapper' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/hdl/fpga_hw_wrapper.vhd:35]
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1407.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1407.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1407.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1407.516 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_microblaze_0_0/fpga_hw_microblaze_0_0/fpga_hw_microblaze_0_0_in_context.xdc] for cell 'fpga_hw_i/microblaze_0'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_microblaze_0_0/fpga_hw_microblaze_0_0/fpga_hw_microblaze_0_0_in_context.xdc] for cell 'fpga_hw_i/microblaze_0'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_axi_uartlite_0_0/fpga_hw_axi_uartlite_0_0/fpga_hw_axi_uartlite_0_0_in_context.xdc] for cell 'fpga_hw_i/axi_uartlite_0'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_axi_uartlite_0_0/fpga_hw_axi_uartlite_0_0/fpga_hw_axi_uartlite_0_0_in_context.xdc] for cell 'fpga_hw_i/axi_uartlite_0'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_dlmb_v10_0/fpga_hw_dlmb_v10_0/fpga_hw_dlmb_v10_0_in_context.xdc] for cell 'fpga_hw_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_dlmb_v10_0/fpga_hw_dlmb_v10_0/fpga_hw_dlmb_v10_0_in_context.xdc] for cell 'fpga_hw_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_ilmb_v10_0/fpga_hw_ilmb_v10_0/fpga_hw_dlmb_v10_0_in_context.xdc] for cell 'fpga_hw_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_ilmb_v10_0/fpga_hw_ilmb_v10_0/fpga_hw_dlmb_v10_0_in_context.xdc] for cell 'fpga_hw_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_dlmb_bram_if_cntlr_0/fpga_hw_dlmb_bram_if_cntlr_0/fpga_hw_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'fpga_hw_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_dlmb_bram_if_cntlr_0/fpga_hw_dlmb_bram_if_cntlr_0/fpga_hw_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'fpga_hw_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_ilmb_bram_if_cntlr_0/fpga_hw_ilmb_bram_if_cntlr_0/fpga_hw_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'fpga_hw_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_ilmb_bram_if_cntlr_0/fpga_hw_ilmb_bram_if_cntlr_0/fpga_hw_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'fpga_hw_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_lmb_bram_0/fpga_hw_lmb_bram_0/fpga_hw_lmb_bram_0_in_context.xdc] for cell 'fpga_hw_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_lmb_bram_0/fpga_hw_lmb_bram_0/fpga_hw_lmb_bram_0_in_context.xdc] for cell 'fpga_hw_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_mdm_1_0/fpga_hw_mdm_1_0/fpga_hw_mdm_1_0_in_context.xdc] for cell 'fpga_hw_i/mdm_1'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_mdm_1_0/fpga_hw_mdm_1_0/fpga_hw_mdm_1_0_in_context.xdc] for cell 'fpga_hw_i/mdm_1'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_clk_wiz_1_0/fpga_hw_clk_wiz_1_0/fpga_hw_clk_wiz_1_0_in_context.xdc] for cell 'fpga_hw_i/clk_wiz_1'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_clk_wiz_1_0/fpga_hw_clk_wiz_1_0/fpga_hw_clk_wiz_1_0_in_context.xdc] for cell 'fpga_hw_i/clk_wiz_1'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_rst_clk_wiz_1_100M_0/fpga_hw_rst_clk_wiz_1_100M_0/fpga_hw_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'fpga_hw_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_rst_clk_wiz_1_100M_0/fpga_hw_rst_clk_wiz_1_100M_0/fpga_hw_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'fpga_hw_i/rst_clk_wiz_1_100M'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xbar_0/fpga_hw_xbar_0/fpga_hw_xbar_0_in_context.xdc] for cell 'fpga_hw_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xbar_0/fpga_hw_xbar_0/fpga_hw_xbar_0_in_context.xdc] for cell 'fpga_hw_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_axi_gpio_0_0/fpga_hw_axi_gpio_0_0/fpga_hw_axi_gpio_0_0_in_context.xdc] for cell 'fpga_hw_i/axi_gpio_0'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_axi_gpio_0_0/fpga_hw_axi_gpio_0_0/fpga_hw_axi_gpio_0_0_in_context.xdc] for cell 'fpga_hw_i/axi_gpio_0'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_axi_gpio_1_1/fpga_hw_axi_gpio_1_1/fpga_hw_axi_gpio_1_1_in_context.xdc] for cell 'fpga_hw_i/axi_gpio_1'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_axi_gpio_1_1/fpga_hw_axi_gpio_1_1/fpga_hw_axi_gpio_1_1_in_context.xdc] for cell 'fpga_hw_i/axi_gpio_1'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_axi_gpio_2_0/fpga_hw_axi_gpio_2_0/fpga_hw_axi_gpio_2_0_in_context.xdc] for cell 'fpga_hw_i/axi_gpio_2'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_axi_gpio_2_0/fpga_hw_axi_gpio_2_0/fpga_hw_axi_gpio_2_0_in_context.xdc] for cell 'fpga_hw_i/axi_gpio_2'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_axi_gpio_3_0/fpga_hw_axi_gpio_3_0/fpga_hw_axi_gpio_3_0_in_context.xdc] for cell 'fpga_hw_i/axi_gpio_3'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_axi_gpio_3_0/fpga_hw_axi_gpio_3_0/fpga_hw_axi_gpio_3_0_in_context.xdc] for cell 'fpga_hw_i/axi_gpio_3'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xadc_wiz_0_0/fpga_hw_xadc_wiz_0_0/fpga_hw_xadc_wiz_0_0_in_context.xdc] for cell 'fpga_hw_i/xadc_wiz_0'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xadc_wiz_0_0/fpga_hw_xadc_wiz_0_0/fpga_hw_xadc_wiz_0_0_in_context.xdc] for cell 'fpga_hw_i/xadc_wiz_0'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_alarm_timer_0_1/fpga_hw_alarm_timer_0_1/fpga_hw_alarm_timer_0_1_in_context.xdc] for cell 'fpga_hw_i/alarm_timer_0'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_alarm_timer_0_1/fpga_hw_alarm_timer_0_1/fpga_hw_alarm_timer_0_1_in_context.xdc] for cell 'fpga_hw_i/alarm_timer_0'
+Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_pmod_encoder_0_0/fpga_hw_pmod_encoder_0_0/fpga_hw_pmod_encoder_0_0_in_context.xdc] for cell 'fpga_hw_i/pmod_encoder_0'
+Finished Parsing XDC File [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_pmod_encoder_0_0/fpga_hw_pmod_encoder_0_0/fpga_hw_pmod_encoder_0_0_in_context.xdc] for cell 'fpga_hw_i/pmod_encoder_0'
+Parsing XDC File [D:/EECE351/Lab/Lab7/Lab7.srcs/constrs_1/imports/org later lol/Basys_3_Master.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command 'Clock' is not supported in the xdc constraint file. [D:/EECE351/Lab/Lab7/Lab7.srcs/constrs_1/imports/org later lol/Basys_3_Master.xdc:6]
+Finished Parsing XDC File [D:/EECE351/Lab/Lab7/Lab7.srcs/constrs_1/imports/org later lol/Basys_3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/EECE351/Lab/Lab7/Lab7.srcs/constrs_1/imports/org later lol/Basys_3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_hw_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_hw_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1407.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1407.516 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'fpga_hw_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1407.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1407.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_clk_wiz_1_0/fpga_hw_clk_wiz_1_0/fpga_hw_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_clk_wiz_1_0/fpga_hw_clk_wiz_1_0/fpga_hw_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/axi_gpio_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/axi_gpio_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/xlslice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/axi_gpio_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/xadc_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/xlslice_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/xlslice_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/alarm_timer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/xlslice_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/xlslice_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/xlslice_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/xlslice_7. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/pmod_encoder_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1407.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1407.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1407.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1407.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1407.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1407.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1411.859 ; gain = 4.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1411.859 ; gain = 4.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1411.859 ; gain = 4.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1411.859 ; gain = 4.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1411.859 ; gain = 4.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1411.859 ; gain = 4.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |fpga_hw_xbar_0               |         1|
+|2     |fpga_hw_alarm_timer_0_1      |         1|
+|3     |fpga_hw_axi_gpio_0_0         |         1|
+|4     |fpga_hw_axi_gpio_1_1         |         1|
+|5     |fpga_hw_axi_gpio_2_0         |         1|
+|6     |fpga_hw_axi_gpio_3_0         |         1|
+|7     |fpga_hw_axi_uartlite_0_0     |         1|
+|8     |fpga_hw_clk_wiz_1_0          |         1|
+|9     |fpga_hw_mdm_1_0              |         1|
+|10    |fpga_hw_microblaze_0_0       |         1|
+|11    |fpga_hw_pmod_encoder_0_0     |         1|
+|12    |fpga_hw_rst_clk_wiz_1_100M_0 |         1|
+|13    |fpga_hw_xadc_wiz_0_0         |         1|
+|14    |fpga_hw_dlmb_bram_if_cntlr_0 |         1|
+|15    |fpga_hw_dlmb_v10_0           |         1|
+|16    |fpga_hw_ilmb_bram_if_cntlr_0 |         1|
+|17    |fpga_hw_ilmb_v10_0           |         1|
+|18    |fpga_hw_lmb_bram_0           |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------+------+
+|      |Cell                              |Count |
++------+----------------------------------+------+
+|1     |fpga_hw_alarm_timer_0_1_bbox      |     1|
+|2     |fpga_hw_axi_gpio_0_0_bbox         |     1|
+|3     |fpga_hw_axi_gpio_1_1_bbox         |     1|
+|4     |fpga_hw_axi_gpio_2_0_bbox         |     1|
+|5     |fpga_hw_axi_gpio_3_0_bbox         |     1|
+|6     |fpga_hw_axi_uartlite_0_0_bbox     |     1|
+|7     |fpga_hw_clk_wiz_1_0_bbox          |     1|
+|8     |fpga_hw_dlmb_bram_if_cntlr_0_bbox |     1|
+|9     |fpga_hw_dlmb_v10_0_bbox           |     1|
+|10    |fpga_hw_ilmb_bram_if_cntlr_0_bbox |     1|
+|11    |fpga_hw_ilmb_v10_0_bbox           |     1|
+|12    |fpga_hw_lmb_bram_0_bbox           |     1|
+|13    |fpga_hw_mdm_1_0_bbox              |     1|
+|14    |fpga_hw_microblaze_0_0_bbox       |     1|
+|15    |fpga_hw_pmod_encoder_0_0_bbox     |     1|
+|16    |fpga_hw_rst_clk_wiz_1_100M_0_bbox |     1|
+|17    |fpga_hw_xadc_wiz_0_0_bbox         |     1|
+|18    |fpga_hw_xbar_0_bbox               |     1|
+|19    |IBUF                              |    28|
+|20    |OBUF                              |    37|
++------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1411.859 ; gain = 4.344
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 69 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:01:03 . Memory (MB): peak = 1411.859 ; gain = 4.344
+Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:10 . Memory (MB): peak = 1411.859 ; gain = 4.344
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1423.891 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1427.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 135c1a0d
+INFO: [Common 17-83] Releasing license: Synthesis
+133 Infos, 105 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:20 . Memory (MB): peak = 1427.582 ; gain = 20.066
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/fpga_hw_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fpga_hw_wrapper_utilization_synth.rpt -pb fpga_hw_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  1 01:50:51 2025...

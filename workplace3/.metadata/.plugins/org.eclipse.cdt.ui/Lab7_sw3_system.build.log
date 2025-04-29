@@ -1,0 +1,6 @@
+12:52:55 **** Incremental Build of configuration Debug for project Lab7_sw3_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+12:52:55 Build Finished (took 191ms)
+
