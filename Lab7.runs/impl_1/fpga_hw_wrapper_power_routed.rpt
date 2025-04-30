@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date             : Tue Apr  1 01:53:18 2025
+| Date             : Tue Apr 29 18:11:47 2025
 | Host             : Thanh_Vo running 64-bit major release  (build 9200)
 | Command          : report_power -file fpga_hw_wrapper_power_routed.rpt -pb fpga_hw_wrapper_power_summary_routed.pb -rpx fpga_hw_wrapper_power_routed.rpx
 | Design           : fpga_hw_wrapper
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.011 |       10 |       --- |             --- |
-| Slice Logic              |     0.003 |     5511 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     1908 |     20800 |            9.17 |
+| Slice Logic              |     0.003 |     5410 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     1846 |     20800 |            8.88 |
 |   LUT as Distributed RAM |    <0.001 |       64 |      9600 |            0.67 |
-|   CARRY4                 |    <0.001 |       68 |      8150 |            0.83 |
-|   Register               |    <0.001 |     2303 |     41600 |            5.54 |
-|   F7/F8 Muxes            |    <0.001 |      111 |     32600 |            0.34 |
+|   CARRY4                 |    <0.001 |       60 |      8150 |            0.74 |
+|   Register               |    <0.001 |     2262 |     41600 |            5.44 |
+|   F7/F8 Muxes            |    <0.001 |      109 |     32600 |            0.33 |
 |   LUT as Shift Register  |    <0.001 |       74 |      9600 |            0.77 |
-|   Others                 |    <0.001 |      490 |       --- |             --- |
-| Signals                  |     0.004 |     3921 |       --- |             --- |
+|   Others                 |    <0.001 |      489 |       --- |             --- |
+| Signals                  |     0.005 |     3866 |       --- |             --- |
 | Block RAM                |    <0.001 |        4 |        50 |            8.00 |
 | MMCM                     |     0.106 |        1 |         5 |           20.00 |
 | I/O                      |    <0.001 |       66 |       106 |           62.26 |
@@ -155,12 +155,14 @@ Table of Contents
 +-------------------------------+-----------+
 | fpga_hw_wrapper               |     0.128 |
 |   fpga_hw_i                   |     0.127 |
+|     alarm_timer_0             |     0.001 |
+|       U0                      |     0.001 |
 |     axi_gpio_0                |     0.001 |
 |       U0                      |     0.001 |
 |     clk_wiz_1                 |     0.106 |
 |       inst                    |     0.106 |
-|     microblaze_0              |     0.010 |
-|       U0                      |     0.010 |
+|     microblaze_0              |     0.011 |
+|       U0                      |     0.011 |
 |     microblaze_0_local_memory |     0.001 |
 |       lmb_bram                |     0.001 |
 |     xadc_wiz_0                |     0.003 |

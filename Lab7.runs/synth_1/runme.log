@@ -10,6 +10,7 @@
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source fpga_hw_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1407.566 ; gain = 0.000
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/EECE351/Lab/ip_repo/pmod_encoder_1.0'.
 WARNING: [IP_Flow 19-3685] Ignored loading user repository 'd:/EECE351/Lab/ip_repo/pmod_encoder_1.0/pmod_encoder_1.0'. The path is contained within another repository.
@@ -20,7 +21,7 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/EECE351/Lab/ip_repo/alarm_
 WARNING: [IP_Flow 19-2207] Repository 'd:/EECE351/Lab/ip_repo/alarm_timer_1.0' already exists; ignoring attempt to add it again.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/EECE351/Lab/ip_repo/alarm_timer_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
-add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1407.516 ; gain = 0.000
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1407.566 ; gain = 0.000
 Command: read_checkpoint -auto_incremental -incremental D:/EECE351/Lab/Lab7/Lab7.srcs/utils_1/imports/synth_1/fpga_hw_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from D:/EECE351/Lab/Lab7/Lab7.srcs/utils_1/imports/synth_1/fpga_hw_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -33,31 +34,31 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 40304
+INFO: [Synth 8-7075] Helper process launched with PID 23684
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1407.516 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'fpga_hw_wrapper' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/hdl/fpga_hw_wrapper.vhd:35]
 INFO: [Synth 8-3491] module 'fpga_hw' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:2778' bound to instance 'fpga_hw_i' of component 'fpga_hw' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/hdl/fpga_hw_wrapper.vhd:57]
 INFO: [Synth 8-638] synthesizing module 'fpga_hw' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:2803]
-INFO: [Synth 8-3491] module 'fpga_hw_alarm_timer_0_1' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_alarm_timer_0_1_stub.vhdl:5' bound to instance 'alarm_timer_0' of component 'fpga_hw_alarm_timer_0_1' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3423]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_alarm_timer_0_1' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_alarm_timer_0_1_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'fpga_hw_axi_gpio_0_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'fpga_hw_axi_gpio_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3447]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_axi_gpio_0_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_gpio_0_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'fpga_hw_axi_gpio_1_1' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_gpio_1_1_stub.vhdl:5' bound to instance 'axi_gpio_1' of component 'fpga_hw_axi_gpio_1_1' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3471]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_axi_gpio_1_1' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_gpio_1_1_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'fpga_hw_axi_gpio_2_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_gpio_2_0_stub.vhdl:5' bound to instance 'axi_gpio_2' of component 'fpga_hw_axi_gpio_2_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3494]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_axi_gpio_2_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_gpio_2_0_stub.vhdl:34]
-INFO: [Synth 8-3491] module 'fpga_hw_axi_gpio_3_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_gpio_3_0_stub.vhdl:5' bound to instance 'axi_gpio_3' of component 'fpga_hw_axi_gpio_3_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3520]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_axi_gpio_3_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_gpio_3_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'fpga_hw_axi_uartlite_0_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'fpga_hw_axi_uartlite_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3543]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_axi_uartlite_0_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_axi_uartlite_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'fpga_hw_clk_wiz_1_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'fpga_hw_clk_wiz_1_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3568]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_clk_wiz_1_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_clk_wiz_1_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'fpga_hw_mdm_1_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'fpga_hw_mdm_1_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3575]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_mdm_1_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_mdm_1_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'fpga_hw_microblaze_0_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'fpga_hw_microblaze_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3588]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_microblaze_0_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_microblaze_0_0_stub.vhdl:63]
+INFO: [Synth 8-3491] module 'fpga_hw_alarm_timer_0_1' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_alarm_timer_0_1_stub.vhdl:5' bound to instance 'alarm_timer_0' of component 'fpga_hw_alarm_timer_0_1' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3423]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_alarm_timer_0_1' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_alarm_timer_0_1_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'fpga_hw_axi_gpio_0_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'fpga_hw_axi_gpio_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3447]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_axi_gpio_0_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'fpga_hw_axi_gpio_1_1' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_axi_gpio_1_1_stub.vhdl:5' bound to instance 'axi_gpio_1' of component 'fpga_hw_axi_gpio_1_1' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3471]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_axi_gpio_1_1' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_axi_gpio_1_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'fpga_hw_axi_gpio_2_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_axi_gpio_2_0_stub.vhdl:5' bound to instance 'axi_gpio_2' of component 'fpga_hw_axi_gpio_2_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3494]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_axi_gpio_2_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_axi_gpio_2_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'fpga_hw_axi_gpio_3_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_axi_gpio_3_0_stub.vhdl:5' bound to instance 'axi_gpio_3' of component 'fpga_hw_axi_gpio_3_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3520]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_axi_gpio_3_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_axi_gpio_3_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'fpga_hw_axi_uartlite_0_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'fpga_hw_axi_uartlite_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3543]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_axi_uartlite_0_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'fpga_hw_clk_wiz_1_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'fpga_hw_clk_wiz_1_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3568]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_clk_wiz_1_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_clk_wiz_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'fpga_hw_mdm_1_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'fpga_hw_mdm_1_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3575]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_mdm_1_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'fpga_hw_microblaze_0_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'fpga_hw_microblaze_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3588]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_microblaze_0_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_microblaze_0_0_stub.vhdl:63]
 INFO: [Synth 8-638] synthesizing module 'fpga_hw_microblaze_0_axi_periph_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1695]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_165VDBW' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_165VDBW' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:57]
@@ -77,27 +78,27 @@ INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_1EVYJJR' [d:/EECE351/L
 INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_1EVYJJR' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:778]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_4NPOKG' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1447]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_4NPOKG' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1447]
-INFO: [Synth 8-3491] module 'fpga_hw_xbar_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'fpga_hw_xbar_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:2605]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_xbar_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'fpga_hw_xbar_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'fpga_hw_xbar_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:2605]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_xbar_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_xbar_0_stub.vhdl:51]
 INFO: [Synth 8-256] done synthesizing module 'fpga_hw_microblaze_0_axi_periph_0' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1695]
 INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_EP2YZG' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:868]
-INFO: [Synth 8-3491] module 'fpga_hw_dlmb_bram_if_cntlr_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'fpga_hw_dlmb_bram_if_cntlr_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1082]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_dlmb_bram_if_cntlr_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_dlmb_bram_if_cntlr_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'fpga_hw_dlmb_v10_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'fpga_hw_dlmb_v10_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1136]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_dlmb_v10_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_dlmb_v10_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'fpga_hw_ilmb_bram_if_cntlr_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'fpga_hw_ilmb_bram_if_cntlr_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1164]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_ilmb_bram_if_cntlr_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_ilmb_bram_if_cntlr_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'fpga_hw_ilmb_v10_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'fpga_hw_ilmb_v10_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1218]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_ilmb_v10_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_ilmb_v10_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'fpga_hw_lmb_bram_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'fpga_hw_lmb_bram_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1246]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_lmb_bram_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_lmb_bram_0_stub.vhdl:27]
+INFO: [Synth 8-3491] module 'fpga_hw_dlmb_bram_if_cntlr_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'fpga_hw_dlmb_bram_if_cntlr_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1082]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_dlmb_bram_if_cntlr_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'fpga_hw_dlmb_v10_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'fpga_hw_dlmb_v10_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1136]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_dlmb_v10_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'fpga_hw_ilmb_bram_if_cntlr_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'fpga_hw_ilmb_bram_if_cntlr_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1164]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_ilmb_bram_if_cntlr_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'fpga_hw_ilmb_v10_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'fpga_hw_ilmb_v10_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1218]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_ilmb_v10_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'fpga_hw_lmb_bram_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'fpga_hw_lmb_bram_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:1246]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_lmb_bram_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_lmb_bram_0_stub.vhdl:27]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_EP2YZG' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:868]
-INFO: [Synth 8-3491] module 'fpga_hw_pmod_encoder_0_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_pmod_encoder_0_0_stub.vhdl:5' bound to instance 'pmod_encoder_0' of component 'fpga_hw_pmod_encoder_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3849]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_pmod_encoder_0_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_pmod_encoder_0_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'fpga_hw_rst_clk_wiz_1_100M_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'fpga_hw_rst_clk_wiz_1_100M_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3877]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_rst_clk_wiz_1_100M_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_rst_clk_wiz_1_100M_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'fpga_hw_xadc_wiz_0_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_xadc_wiz_0_0_stub.vhdl:5' bound to instance 'xadc_wiz_0' of component 'fpga_hw_xadc_wiz_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3890]
-INFO: [Synth 8-638] synthesizing module 'fpga_hw_xadc_wiz_0_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-31748-Thanh_Vo/realtime/fpga_hw_xadc_wiz_0_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'fpga_hw_pmod_encoder_0_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_pmod_encoder_0_0_stub.vhdl:5' bound to instance 'pmod_encoder_0' of component 'fpga_hw_pmod_encoder_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3849]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_pmod_encoder_0_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_pmod_encoder_0_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'fpga_hw_rst_clk_wiz_1_100M_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'fpga_hw_rst_clk_wiz_1_100M_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3877]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_rst_clk_wiz_1_100M_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'fpga_hw_xadc_wiz_0_0' declared at 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_xadc_wiz_0_0_stub.vhdl:5' bound to instance 'xadc_wiz_0' of component 'fpga_hw_xadc_wiz_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3890]
+INFO: [Synth 8-638] synthesizing module 'fpga_hw_xadc_wiz_0_0' [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/.Xil/Vivado-5580-Thanh_Vo/realtime/fpga_hw_xadc_wiz_0_0_stub.vhdl:41]
 INFO: [Synth 8-3491] module 'fpga_hw_xlconcat_0_0' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlconcat_0_0/synth/fpga_hw_xlconcat_0_0.v:53' bound to instance 'xlconcat_0' of component 'fpga_hw_xlconcat_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/synth/fpga_hw.vhd:3923]
 INFO: [Synth 8-6157] synthesizing module 'fpga_hw_xlconcat_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_xlconcat_0_0/synth/fpga_hw_xlconcat_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
@@ -245,18 +246,18 @@ WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is eithe
 WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1407.516 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1407.516 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1407.516 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1407.516 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1407.566 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -306,23 +307,23 @@ Parsing XDC File [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1407.516 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1407.566 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1407.516 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1407.566 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'fpga_hw_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1407.516 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1407.516 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -359,10 +360,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/xlslice_6. (constraint 
 Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/xlslice_7. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for fpga_hw_i/pmod_encoder_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1407.516 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1407.516 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -385,25 +386,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1407.516 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1407.516 ; gain = 0.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:54 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1407.516 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:54 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1407.516 ; gain = 0.000
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:54 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -421,37 +422,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1411.859 ; gain = 4.344
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1411.859 ; gain = 4.344
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1411.859 ; gain = 4.344
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1411.859 ; gain = 4.344
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1411.859 ; gain = 4.344
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1411.859 ; gain = 4.344
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -507,25 +508,25 @@ Report Cell Usage:
 |20    |OBUF                              |    37|
 +------+----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1411.859 ; gain = 4.344
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 1407.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 69 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:01:03 . Memory (MB): peak = 1411.859 ; gain = 4.344
-Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:10 . Memory (MB): peak = 1411.859 ; gain = 4.344
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:58 . Memory (MB): peak = 1407.566 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:01:03 . Memory (MB): peak = 1407.566 ; gain = 0.000
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1423.891 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1418.770 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1427.582 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1426.324 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 135c1a0d
+Synth Design complete, checksum: 6679648
 INFO: [Common 17-83] Releasing license: Synthesis
 133 Infos, 105 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:20 . Memory (MB): peak = 1427.582 ; gain = 20.066
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:17 . Memory (MB): peak = 1426.324 ; gain = 18.758
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'D:/EECE351/Lab/Lab7/Lab7.runs/synth_1/fpga_hw_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file fpga_hw_wrapper_utilization_synth.rpt -pb fpga_hw_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr  1 01:50:51 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 29 18:08:07 2025...

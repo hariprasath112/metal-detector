@@ -1,7 +1,7 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-// Date        : Tue Apr  1 01:49:09 2025
+// Date        : Tue Apr 29 18:06:20 2025
 // Host        : Thanh_Vo running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_pmod_encoder_0_0/fpga_hw_pmod_encoder_0_0_stub.v
@@ -14,15 +14,15 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "pmod_encoder_v1_0,Vivado 2022.1" *)
-module fpga_hw_pmod_encoder_0_0(a, b, btn, sw, s00_axi_aclk, s00_axi_aresetn, 
+module fpga_hw_pmod_encoder_0_0(a, b, c, sw, s00_axi_aclk, s00_axi_aresetn, 
   s00_axi_awaddr, s00_axi_awprot, s00_axi_awvalid, s00_axi_awready, s00_axi_wdata, 
   s00_axi_wstrb, s00_axi_wvalid, s00_axi_wready, s00_axi_bresp, s00_axi_bvalid, 
   s00_axi_bready, s00_axi_araddr, s00_axi_arprot, s00_axi_arvalid, s00_axi_arready, 
   s00_axi_rdata, s00_axi_rresp, s00_axi_rvalid, s00_axi_rready)
-/* synthesis syn_black_box black_box_pad_pin="a,b,btn,sw,s00_axi_aclk,s00_axi_aresetn,s00_axi_awaddr[3:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[3:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready" */;
+/* synthesis syn_black_box black_box_pad_pin="a,b,c,sw,s00_axi_aclk,s00_axi_aresetn,s00_axi_awaddr[3:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[3:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready" */;
   input a;
   input b;
-  input btn;
+  input c;
   input sw;
   input s00_axi_aclk;
   input s00_axi_aresetn;

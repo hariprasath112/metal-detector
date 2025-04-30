@@ -6,7 +6,7 @@
 <Project Version="7" Minor="60" Path="d:/eece351/lab/lab7/lab7.tmp/pmod_encoder_v1_0_project/pmod_encoder_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="b55148b97782450b9085759ccd841d7d"/>
+    <Option Name="Id" Val="6c7f5b4272634daab44ad13a64fbcf7a"/>
     <Option Name="Part" Val="xc7a35tcpg236-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>

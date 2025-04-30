@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="40">
   <CompositeFile CompositeFileTopName="fpga_hw" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1743486385"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1743486385"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1743486385"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1743486385"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1745964303"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1745964303"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1745964303"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1745964303"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth\fpga_hw.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>

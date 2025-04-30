@@ -68,7 +68,7 @@
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.USE_RDI_CUSTOMIZATION">TRUE</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.USE_RDI_GENERATION">TRUE</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPCONTEXT">IP_Integrator</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPREVISION">16</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPREVISION">18</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.MANAGED">TRUE</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.OUTPUTDIR">../../../../../../Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_pmod_encoder_0_0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.SELECTEDSIMMODEL"/>
@@ -121,7 +121,7 @@
                 &quot;ports&quot;: {
                   &quot;a&quot;: [ { &quot;direction&quot;: &quot;in&quot; } ],
                   &quot;b&quot;: [ { &quot;direction&quot;: &quot;in&quot; } ],
-                  &quot;btn&quot;: [ { &quot;direction&quot;: &quot;in&quot; } ],
+                  &quot;c&quot;: [ { &quot;direction&quot;: &quot;in&quot; } ],
                   &quot;sw&quot;: [ { &quot;direction&quot;: &quot;in&quot; } ],
                   &quot;s00_axi_aclk&quot;: [ { &quot;direction&quot;: &quot;in&quot; } ],
                   &quot;s00_axi_aresetn&quot;: [ { &quot;direction&quot;: &quot;in&quot; } ],

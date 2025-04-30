@@ -1,86 +1,78 @@
 Nothing to build in platform 'Lab7_sw3_wrapper'
 
-13:05:13 **** Incremental Build of configuration Debug for project Lab7_sw3 ****
+12:20:06 **** Incremental Build of configuration Debug for project Lab7_sw3 ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -ID:/EECE351/Lab/Lab7/workplace3/Lab7_sw3_wrapper/export/Lab7_sw3_wrapper/sw/Lab7_sw3_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:309:17: warning: implicit declaration of function 'seg_disp' [-Wimplicit-function-declaration]
-  309 |                 seg_disp(data,0);
+../src/helloworld.c:259:17: warning: implicit declaration of function 'seg_disp' [-Wimplicit-function-declaration]
+  259 |                 seg_disp(data,0);
       |                 ^~~~~~~~
-../src/helloworld.c:457:17: warning: implicit declaration of function 'detecting_object' [-Wimplicit-function-declaration]
-  457 |                 detecting_object(current);
+../src/helloworld.c:364:17: warning: implicit declaration of function 'detecting_object' [-Wimplicit-function-declaration]
+  364 |                 detecting_object();
       |                 ^~~~~~~~~~~~~~~~
-../src/helloworld.c:435:26: warning: variable 'logBuf' set but not used [-Wunused-but-set-variable]
-  435 |                 LogEntry logBuf[MAX_LOG];
-      |                          ^~~~~~
-../src/helloworld.c:276:18: warning: variable 'prev_RIGHT_VALUE' set but not used [-Wunused-but-set-variable]
-  276 |         unsigned prev_RIGHT_VALUE;
+../src/helloworld.c:232:18: warning: unused variable 'prev_RIGHT_VALUE' [-Wunused-variable]
+  232 |         unsigned prev_RIGHT_VALUE;
       |                  ^~~~~~~~~~~~~~~~
-../src/helloworld.c:275:18: warning: unused variable 'prev_LEFT_VALUE' [-Wunused-variable]
-  275 |         unsigned prev_LEFT_VALUE;
+../src/helloworld.c:231:18: warning: unused variable 'prev_LEFT_VALUE' [-Wunused-variable]
+  231 |         unsigned prev_LEFT_VALUE;
       |                  ^~~~~~~~~~~~~~~
-../src/helloworld.c:269:18: warning: unused variable 'logBuf' [-Wunused-variable]
-  269 |         LogEntry logBuf[MAX_LOG];
-      |                  ^~~~~~
-../src/helloworld.c:260:18: warning: unused variable 'down_counter' [-Wunused-variable]
-  260 |         unsigned down_counter = 500;
-      |                  ^~~~~~~~~~~~
-../src/helloworld.c:259:18: warning: unused variable 'right_coil_width' [-Wunused-variable]
-  259 |         unsigned right_coil_width;
-      |                  ^~~~~~~~~~~~~~~~
-../src/helloworld.c:258:18: warning: unused variable 'left_coil_width' [-Wunused-variable]
-  258 |         unsigned left_coil_width;
-      |                  ^~~~~~~~~~~~~~~
-../src/helloworld.c:257:15: warning: unused variable 'start_estimating_right' [-Wunused-variable]
-  257 |         _Bool start_estimating_right;
-      |               ^~~~~~~~~~~~~~~~~~~~~~
-../src/helloworld.c:256:15: warning: unused variable 'start_estimating_left' [-Wunused-variable]
-  256 |         _Bool start_estimating_left;
-      |               ^~~~~~~~~~~~~~~~~~~~~
-../src/helloworld.c:252:15: warning: variable 'prev_right_coil' set but not used [-Wunused-but-set-variable]
-  252 |         _Bool prev_right_coil;
-      |               ^~~~~~~~~~~~~~~
-../src/helloworld.c:251:15: warning: variable 'prev_left_coil' set but not used [-Wunused-but-set-variable]
-  251 |         _Bool prev_left_coil;
-      |               ^~~~~~~~~~~~~~
-../src/helloworld.c:248:18: warning: unused variable 'position' [-Wunused-variable]
-  248 |         unsigned position;
-      |                  ^~~~~~~~
-../src/helloworld.c:246:18: warning: unused variable 'prev_distance' [-Wunused-variable]
-  246 |         unsigned prev_distance;
+../src/helloworld.c:228:18: warning: unused variable 'break_counter' [-Wunused-variable]
+  228 |         unsigned break_counter=0;
       |                  ^~~~~~~~~~~~~
-../src/helloworld.c:245:18: warning: unused variable 'distance' [-Wunused-variable]
-  245 |         unsigned distance;
-      |                  ^~~~~~~~
-../src/helloworld.c: At top level:
-../src/helloworld.c:472:6: warning: conflicting types for 'detecting_object'; have 'void(uint8_t)' {aka 'void(unsigned char)'}
-  472 | void detecting_object(uint8_t current){
-      |      ^~~~~~~~~~~~~~~~
-../src/helloworld.c:457:17: note: previous implicit declaration of 'detecting_object' with type 'void(uint8_t)' {aka 'void(unsigned char)'}
-  457 |                 detecting_object(current);
-      |                 ^~~~~~~~~~~~~~~~
-../src/helloworld.c:514:6: warning: conflicting types for 'seg_disp'; have 'void(uint8_t *, uint8_t)' {aka 'void(unsigned char *, unsigned char)'}
-  514 | void seg_disp(uint8_t data[4], uint8_t cursor)
-      |      ^~~~~~~~
-../src/helloworld.c:309:17: note: previous implicit declaration of 'seg_disp' with type 'void(uint8_t *, uint8_t)' {aka 'void(unsigned char *, unsigned char)'}
-  309 |                 seg_disp(data,0);
+../src/helloworld.c:226:17: warning: unused variable 'logCount' [-Wunused-variable]
+  226 |         uint8_t logCount = 0;
       |                 ^~~~~~~~
-../src/helloworld.c: In function 'estimating_width_LEFT':
-../src/helloworld.c:209:1: warning: control reaches end of non-void function [-Wreturn-type]
-  209 | }
-      | ^
-../src/helloworld.c: In function 'estimating_width_RIGHT':
-../src/helloworld.c:238:1: warning: control reaches end of non-void function [-Wreturn-type]
-  238 | }
-      | ^
+../src/helloworld.c:225:18: warning: unused variable 'logBuf' [-Wunused-variable]
+  225 |         LogEntry logBuf[MAX_LOG];
+      |                  ^~~~~~
+../src/helloworld.c:214:15: warning: variable 'prev_right_coil' set but not used [-Wunused-but-set-variable]
+  214 |         _Bool prev_right_coil;
+      |               ^~~~~~~~~~~~~~~
+../src/helloworld.c:213:15: warning: variable 'prev_left_coil' set but not used [-Wunused-but-set-variable]
+  213 |         _Bool prev_left_coil;
+      |               ^~~~~~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:376:6: warning: conflicting types for 'detecting_object'; have 'void()'
+  376 | void detecting_object(){
+      |      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:364:17: note: previous implicit declaration of 'detecting_object' with type 'void()'
+  364 |                 detecting_object();
+      |                 ^~~~~~~~~~~~~~~~
+../src/helloworld.c:475:6: warning: conflicting types for 'seg_disp'; have 'void(uint8_t *, uint8_t)' {aka 'void(unsigned char *, unsigned char)'}
+  475 | void seg_disp(uint8_t data[4], uint8_t cursor){
+      |      ^~~~~~~~
+../src/helloworld.c:259:17: note: previous implicit declaration of 'seg_disp' with type 'void(uint8_t *, uint8_t)' {aka 'void(unsigned char *, unsigned char)'}
+  259 |                 seg_disp(data,0);
+      |                 ^~~~~~~~
+../src/helloworld.c:160:16: warning: 'MIN_LEFT_duty' defined but not used [-Wunused-variable]
+  160 | static uint8_t MIN_LEFT_duty;
+      |                ^~~~~~~~~~~~~
+../src/helloworld.c:154:17: warning: 'RIGHT_VALUE' defined but not used [-Wunused-variable]
+  154 | static unsigned RIGHT_VALUE;
+      |                 ^~~~~~~~~~~
+../src/helloworld.c:153:17: warning: 'LEFT_VALUE' defined but not used [-Wunused-variable]
+  153 | static unsigned LEFT_VALUE;
+      |                 ^~~~~~~~~~
+../src/helloworld.c:151:17: warning: 'counter_RIGHT' defined but not used [-Wunused-variable]
+  151 | static unsigned counter_RIGHT = 0;
+      |                 ^~~~~~~~~~~~~
+../src/helloworld.c:150:17: warning: 'counter_LEFT' defined but not used [-Wunused-variable]
+  150 | static unsigned counter_LEFT = 0;
+      |                 ^~~~~~~~~~~~
+../src/helloworld.c:50:17: warning: 'MAX_VALUE' defined but not used [-Wunused-variable]
+   50 | static unsigned MAX_VALUE=0;
+      |                 ^~~~~~~~~
+../src/helloworld.c:49:17: warning: 'MIN_VALUE' defined but not used [-Wunused-variable]
+   49 | static unsigned MIN_VALUE=0;
+      |                 ^~~~~~~~~
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:459:32: warning: 'right_coil' may be used uninitialized [-Wmaybe-uninitialized]
-  459 |                 prev_right_coil=right_coil;
+../src/helloworld.c:366:32: warning: 'right_coil' may be used uninitialized [-Wmaybe-uninitialized]
+  366 |                 prev_right_coil=right_coil;
       |                 ~~~~~~~~~~~~~~~^~~~~~~~~~~
-../src/helloworld.c:460:31: warning: 'left_coil' may be used uninitialized [-Wmaybe-uninitialized]
-  460 |                 prev_left_coil=left_coil;
+../src/helloworld.c:367:31: warning: 'left_coil' may be used uninitialized [-Wmaybe-uninitialized]
+  367 |                 prev_left_coil=left_coil;
       |                 ~~~~~~~~~~~~~~^~~~~~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
@@ -92,6 +84,6 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/EECE351/Lab/Lab7/workplace3/Lab7_sw3_wr
 'Invoking: MicroBlaze Print Size'
 mb-size Lab7_sw3.elf  |tee "Lab7_sw3.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  10880	    272	   3168	  14320	   37f0	Lab7_sw3.elf
+  12180	    272	   3156	  15608	   3cf8	Lab7_sw3.elf
 'Finished building: Lab7_sw3.elf.size'
 ' '

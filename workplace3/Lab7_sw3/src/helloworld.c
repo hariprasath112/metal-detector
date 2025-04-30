@@ -37,6 +37,19 @@ typedef struct{
 #define btnR 2
 #define btnL 3
 
+#define L 10
+#define r 11
+#define C 12
+#define U 13
+
+static uint8_t record_counter=0;
+static uint8_t rightCounter=0;
+static uint8_t leftCounter=0;
+static uint8_t centerCounter=0;
+static unsigned MIN_VALUE=0;
+static unsigned MAX_VALUE=0;
+static uint8_t previous_Letter = U;
+
 
 
 
@@ -113,14 +126,8 @@ _Bool btn_pressed(int x){
     return retval;
 }
 
-
-
-// Example 7-segment LUT for a certain hardware wiring.
-// Make sure these bit patterns match your actual display (which segment is which bit).
 static const uint8_t disp_lut[15] = {
-  // a b c d e f g  (bit 7 typically for decimal point)
-  // The code below is for a particular Pmod7-seg style device.
-  // You may need to invert or shuffle bits based on your hardware.
+
   0b1000000, // 0
   0b1111001, // 1
   0b0100100, // 2
@@ -137,41 +144,7 @@ static const uint8_t disp_lut[15] = {
   0b1000001, //U    13
 };
 
-#define L 10
-#define r 11
-#define C 12
-#define U 13
 
-
-void pulse_generator_LEFT(int duty_cycle){
-    static uint16_t state=0;
-    uint16_t duty = duty_cycle * 10;
-    if(state<duty){
-    	JB|= (1<<0);
-
-    }
-    if(state>duty){
-    	JB&= ~(1<<0);
-    }
-    if(++state==1000){
-        state=0;
-    }
-}
-
-void pulse_generator_RIGHT(int duty_cycle){
-    static uint16_t state=0;
-    uint16_t duty = duty_cycle * 10;
-    if(state<duty){
-    	JB|= (1<<1);
-
-    }
-    if(state>duty){
-    	JB&= ~(1<<1);
-    }
-    if(++state==1000){
-        state=0;
-    }
-}
 
 static uint8_t data[4] = {0,0,0,0};
 static unsigned counter_LEFT = 0;
@@ -181,71 +154,60 @@ static unsigned LEFT_VALUE;
 static unsigned RIGHT_VALUE;
 
 
-unsigned estimating_width_LEFT(_Bool prev, _Bool current){
-	static enum {IDLE, ESTIMATING} state = IDLE;
-	_Bool rising_edge = (prev == 0 && current==1);
-	_Bool falling_edge = ((prev == 1 && current==0));
-	switch(state){
-		case IDLE:
-			counter_LEFT=0;
-			if(rising_edge){
-				state = ESTIMATING;
-			}else{
-				state = IDLE;
-			}
-			break;
-		case ESTIMATING:
-			counter_LEFT++;
-			if(falling_edge){
-				LEFT_VALUE = counter_LEFT;
-				state = IDLE;
-			}else{
-				if(prev == 1 && current ==1){
-					state = ESTIMATING;
-				}
-			}
-			break;
+static uint8_t LEFT_duty;
+static uint8_t RIGHT_duty;
+
+static uint8_t MIN_LEFT_duty;
+static uint8_t MIN_RIGHT_duty;
+
+
+void estimating_width_LEFT(_Bool current){
+	static unsigned state = 0;
+	static unsigned counter_1;
+	static unsigned counter_0;
+	if(current==1){
+		counter_1++;
+	}
+	if(current==0){
+		counter_0++;
+	}
+	if(++state==180){
+		LEFT_duty=counter_1*100/180;
+		state=0;
+		counter_1=0;
+		counter_0=0;
+	}
+}
+
+void estimating_width_RIGHT(_Bool current){
+	static unsigned state = 0;
+	static unsigned counter_1=0;
+	static unsigned counter_0=0;
+	if(current==1){
+		counter_1++;
+	}
+	if(current==0){
+		counter_0++;
+	}
+	if(++state==180){
+		RIGHT_duty=counter_1*100/180;
+		state=0;
+		counter_1=0;
+		counter_0=0;
 	}
 }
 
 
-unsigned estimating_width_RIGHT(_Bool prev, _Bool current){
-	static enum {IDLE, ESTIMATING} state = IDLE;
-	_Bool rising_edge = (prev == 0 && current==1);
-	_Bool falling_edge = ((prev == 1 && current==0));
-	switch(state){
-		case IDLE:
-			counter_RIGHT=0;
-			if(rising_edge){
-				state = ESTIMATING;
-			}else{
-				state = IDLE;
-			}
-			break;
-		case ESTIMATING:
-			counter_RIGHT++;
 
-			if(falling_edge){
-				RIGHT_VALUE = counter_RIGHT;
-				state = IDLE;
-			}else{
-				if(prev == 1 && current ==1){
-					state = ESTIMATING;
-				}
-			}
-			break;
-	}
-}
-static unsigned MIN_VALUE=0;
-static unsigned MAX_VALUE=0;
-static uint8_t previous_Letter = U;
+
+
+
 #define estimating_interval 100
 int main(){
-	print(" Hello \n");
-	unsigned distance;
-	unsigned prev_distance;
+	print(" Program Started \n");
 
-	unsigned position;
+
+
 	_Bool right_coil;
 	_Bool left_coil;
 	_Bool prev_left_coil;
@@ -253,42 +215,28 @@ int main(){
 	unsigned cycle_count=0;
 	unsigned left_coil_dips=0;
 	unsigned right_coil_dips=0;
-	_Bool start_estimating_left;
-	_Bool start_estimating_right;
-	unsigned left_coil_width;
-	unsigned right_coil_width;
-	unsigned down_counter = 500;
 
 	_Bool JB0;
 	_Bool prev_JB0;
 	_Bool JB1;
 	_Bool prev_JB1;
-	int duty_L =10;
-	int duty_R =10;
+
 
 	LogEntry logBuf[MAX_LOG];
 	uint8_t logCount = 0;
 
-	int count = 0;
-	int8_t record_counter=-2;
+	unsigned break_counter=0;
+
 
 	unsigned prev_LEFT_VALUE;
 	unsigned prev_RIGHT_VALUE;
 	while(1){
-		delay_us(2000);
+		delay_us(10);
 		JB0=JC34&1;
 		JB1=(JC34>>1)&1;
-		if(btn_pressed(btnL)){
-			duty_L+=10;
-		}
 
-		if(btn_pressed(btnR)){
-			duty_R+=10;
-			record_counter=0;
-		}
-
-		estimating_width_LEFT(prev_JB0, JB0);
-		estimating_width_RIGHT(prev_JB1, JB1);
+		estimating_width_LEFT(JB0);
+		estimating_width_RIGHT(JB1);
 
 		if(prev_JB0 == 1 && JB0 == 0){
 			left_coil_dips ++;
@@ -297,77 +245,41 @@ int main(){
 			right_coil_dips ++;
 		}
 
+//		data[2]=(record_counter/10)%10;
+//		data[3]=(record_counter/1)%10;
+
+		data[1]=leftCounter;
+		data[2]=centerCounter;
+		data[3]=rightCounter;
 
 
-		prev_RIGHT_VALUE = RIGHT_VALUE;
 
-
-		data[2]=(record_counter/10)%10;
-		data[3]=(record_counter/1)%10;
 		prev_JB0=JB0;
 		prev_JB1=JB1;
 		seg_disp(data,0);
 
-		uint8_t current = data[1];
-		if(current==U){
-			MIN_VALUE = RIGHT_VALUE;
-		}else{
-			unsigned do_chia = MIN_VALUE/5;
-			MAX_VALUE = counter_RIGHT>counter_LEFT ? counter_RIGHT : counter_LEFT;
+		uint8_t current = data[0];
 
-			if(MAX_VALUE >= MIN_VALUE){
-				LEDS|=(1<<0);
-				LEDS|=(1<<1);
-			}else{
-				LEDS&=~(1<<0);
-				LEDS&=~(1<<1);
-
-			}
-			if(MAX_VALUE >= MIN_VALUE+1*do_chia){
-				LEDS|=(1<<2);
-				LEDS|=(1<<3);
-			}else{
-				LEDS&=~(1<<2);
-				LEDS&=~(1<<3);
-
-			}
-			if(MAX_VALUE >= MIN_VALUE+2*do_chia){
-				LEDS|=(1<<4);
-				LEDS|=(1<<5);
-			}else{
-				LEDS&=~(1<<4);
-				LEDS&=~(1<<5);
-
-			}
-			if(MAX_VALUE >= MIN_VALUE+3*do_chia){
-				LEDS|=(1<<6);
-				LEDS|=(1<<7);
-			}else{
-				LEDS&=~(1<<6);
-				LEDS&=~(1<<7);
-
-			}
-		}
 
 		if(++cycle_count==estimating_interval){
 
 
 			if((right_coil_dips==0 && left_coil_dips==0) ){
 
-				data[1]=C;
+				data[0]=C;
 			}else{
 				if(right_coil_dips==0 && left_coil_dips!=0){
 
-					data[1]=r;
+					data[0]=r;
 				}
 
 				if(right_coil_dips!=0 && left_coil_dips==0){
 
-					data[1]=L;
+					data[0]=L;
 				}
 
 				if(right_coil_dips!=0 && left_coil_dips!=0){
-					data[1]=U;
+					data[0]=U;
 
 				}
 
@@ -380,87 +292,80 @@ int main(){
 
 		}
 
-		if(current == r){
-						if(counter_RIGHT>=MIN_VALUE*8/8){
-										LEDS|=(1<<0);
-									}else{
-										LEDS&=~(1<<0);
-									}
-									if(counter_RIGHT>=MIN_VALUE*8/7){
-										LEDS|=(1<<1);
-									}else{
-										LEDS&=~(1<<1);
-									}
-									if(counter_RIGHT>=MIN_VALUE*8/6){
-										LEDS|=(1<<2);
-									}else{
-										LEDS&=~(1<<2);
-									}
-									if(counter_RIGHT>=MIN_VALUE*8/5){
-										LEDS|=(1<<3);
-									}else{
-										LEDS&=~(1<<3);
-									}
-									if(counter_RIGHT>=MIN_VALUE*8/4){
-										LEDS|=(1<<4);
-									}else{
-										LEDS&=~(1<<4);
-									}
-									if(counter_RIGHT>=MIN_VALUE*8/3){
-										LEDS|=(1<<5);
-									}else{
-										LEDS&=~(1<<5);
-									}
-									if(counter_RIGHT>=MIN_VALUE*8/2){
-										LEDS|=(1<<6);
-									}else{
-										LEDS&=~(1<<6);
-									}
-									if(counter_RIGHT>=MIN_VALUE*8/1){
-										LEDS|=(1<<7);
-									}else{
-										LEDS&=~(1<<7);
-									}
-					}
+		if(data[0]==U){
+			MIN_RIGHT_duty=RIGHT_duty;
+			MIN_RIGHT_duty=RIGHT_duty;
+			LEDS&=~(1<<0);
+			LEDS&=~(1<<1);
+			LEDS&=~(1<<2);
+			LEDS&=~(1<<3);
+			LEDS&=~(1<<4);
+			LEDS&=~(1<<5);
+			LEDS&=~(1<<6);
+			LEDS&=~(1<<7);
+			LEDS&=~(1<<8);
+			LEDS&=~(1<<9);
+			LEDS&=~(1<<10);
+			LEDS&=~(1<<11);
+			LEDS&=~(1<<12);
+			LEDS&=~(1<<13);
+			LEDS&=~(1<<14);
+			LEDS&=~(1<<15);
+		}else{
+			if(RIGHT_duty >= MIN_RIGHT_duty+ 7.5*1){
+				LEDS|=(1<<0);
+			}else{
+				LEDS|=(1<<0);
+			}
+			if(RIGHT_duty >= MIN_RIGHT_duty+ 7.5*2){
+				LEDS|=(1<<1);
+			}else{
+				LEDS&=~(1<<1);
+			}
+			if(RIGHT_duty >= MIN_RIGHT_duty+ 7.5*3){
+				LEDS|=(1<<2);
+			}else{
+				LEDS&=~(1<<2);
+			}
+			if(RIGHT_duty >= MIN_RIGHT_duty+ 7.5*4){
+				LEDS|=(1<<3);
+			}else{
+				LEDS&=~(1<<3);
+			}
+		}
 
-//		uint8_t current = data[1];
-//		if(previous_Letter!=current){
-//			data[0] = previous_Letter;
-//			previous_Letter = current;
-//			record_counter++;
+
+		//uint8_t current = data[1];
+		if(previous_Letter!=current){
+			data[1] = previous_Letter;
+			previous_Letter = current;
+
+			if(previous_Letter==r){
+				rightCounter++;
+
+			}
+			if(previous_Letter==L){
+				leftCounter++;
+			}
+			if(previous_Letter==C){
+				centerCounter++;
+			}
+			record_counter++;
+		}
+
+//		if(current== r && previous_Letter == C){
+//			rightCounter--;
+//		}
+//
+//		if(current== L && previous_Letter == C){
+//			leftCounter--;
 //		}
 
-
-
-		LogEntry logBuf[MAX_LOG];
-		if (current != previous_Letter){
-		if (logCount < MAX_LOG){
-		logBuf[logCount]=(LogEntry){previous_Letter,current};
-		if(count>=2){
-		xil_printf("%2d  |  %2d  ->  %2d\n",logCount+1,previous_Letter,current);
-		++logCount;
-
-		}count++;
-		}
-		//data[0]=previous_Letter;
-		previous_Letter = current;
-
-		record_counter++;
-		}
-
-		if (logCount == MAX_LOG){
-		xil_printf("\n Reached 25 changes, stoppping...");
-		break;
-
-		}
-
-		detecting_object(current);
+		detecting_object();
 
 		prev_right_coil=right_coil;
 		prev_left_coil=left_coil;
 
-
-
 	}
 
 
@@ -468,51 +373,106 @@ int main(){
 
 
 
-
-void detecting_object(uint8_t current){
-	static enum{ UNDETECTED, DETECTED} state = UNDETECTED;
-
+void detecting_object(){
+	static enum {UNDETECTED, LEFT,CENTER,RIGHT, WAIT}  state = UNDETECTED;
+	unsigned wait_counter=0;
 	switch(state){
 		case UNDETECTED:
-			if(data[1] == U){
+			if(data[0]==U){
 				state = UNDETECTED;
 			}else{
-				state=DETECTED;
+				state=WAIT;
 			}
 			break;
-		case DETECTED:
-//			if(data[0]!=previous_Letter && data[0]!=U){
-//				record_counter++;
-//				state = DETECTED;
-//			}else{
-//				if(data[0] == U){
-//					//record_counter++;
-//					state = UNDETECTED;
-//				}
-//
-//			}
-
-
-
-				if(current!=previous_Letter){
-					//record_counter++;
-					state=DETECTED;
-				}
-
-				if(current == U){
-					//record_counter++;
-					state = UNDETECTED;
-				}
+		case WAIT:
+			for(wait_counter=0;wait_counter<1000;wait_counter++){}
+			if(data[0]==U){
+				state = UNDETECTED;
+			}
+			if(data[0]==L){
+				state=LEFT;
+			}
+			if(data[0]==C){
+				state=CENTER;
+			}
+			if(data[0]==r){
+				state=RIGHT;
+			}
 			break;
-
+		case LEFT:
+			//leftCounter++;
+			state = WAIT;
+			break;
+		case CENTER:
+			//centerCounter++;
+			state = WAIT;;
+			break;
+		case RIGHT:
+			//rightCounter++;
+			state = WAIT;
+			break;
 	}
 }
 
+//
+//void detecting_object(uint8_t current){
+//	static enum{ UNDETECTED, DETECTED} state = UNDETECTED;
+//
+//	switch(state){
+//		case UNDETECTED:
+//			if(data[0] == U){
+//				state = UNDETECTED;
+//			}else{
+//				state=DETECTED;
+//			}
+//			break;
+//		case DETECTED:
+//			//NOT SHIFTING
+//			//if(current!=previous_Letter){
+//				//record_counter++;
+//		//}
+////				else{
+////				if(data[0] == U){
+////					//record_counter++;
+////					state = UNDETECTED;
+////				}
+////
+////			}
+//
+//
+//
+//				if(current!=previous_Letter){
+//					//record_counter++;
+//					state=DETECTED;
+//				}
+//
+//				if(current == U){
+//					if(previous_Letter==r){
+//						rightCounter++;
+//						state = UNDETECTED;
+//
+//					}
+//					if(previous_Letter==L){
+//						leftCounter++;
+//						state = UNDETECTED;
+//						//xil_printf("Yes");
+//					}
+//					if(previous_Letter==C){
+//						centerCounter++;
+//						state = UNDETECTED;
+//					}
+//					record_counter++;
+//
+//				}
+//			break;
+//
+//	}
+//}
 
 
 
-void seg_disp(uint8_t data[4], uint8_t cursor)
-{
+
+void seg_disp(uint8_t data[4], uint8_t cursor){
 
     static uint16_t blink_cnt = 0;
     blink_cnt++;
@@ -552,17 +512,4 @@ void seg_disp(uint8_t data[4], uint8_t cursor)
     // Move on to the next digit for next call
     digit = (digit + 1) & 0x03;
 }
-//
-//
-//void led_flasher(unsigned duty_int, unsigned duty_dec_point )
-//{	unsigned duty=duty_int*10+duty_dec_point;
-//	static uint16_t state=0;
-//	if( state < duty) //
-//		LEDS= 0xFFFF;
-//	if( state >= duty)
-//		LEDS = 0x0000;
-//	if( ++state == 1000)
-//		state =0;
-//}
-//
-//
+

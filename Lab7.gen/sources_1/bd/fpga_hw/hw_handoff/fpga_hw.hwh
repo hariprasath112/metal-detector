@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Apr  1 01:46:24 2025" VIVADOVERSION="2022.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Apr 29 18:05:02 2025" VIVADOVERSION="2022.1">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="fpga_hw" PACKAGE="cpg236" SPEEDGRADE="-1"/>
 
@@ -5858,7 +5858,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="16" FULLNAME="/pmod_encoder_0" HWVERSION="1.0" INSTANCE="pmod_encoder_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pmod_encoder" VLNV="xilinx.com:user:pmod_encoder:1.0">
+    <MODULE COREREVISION="18" FULLNAME="/pmod_encoder_0" HWVERSION="1.0" INSTANCE="pmod_encoder_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pmod_encoder" VLNV="xilinx.com:user:pmod_encoder:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
@@ -5882,7 +5882,7 @@
             <CONNECTION INSTANCE="xlslice_2" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="btn" SIGIS="undef" SIGNAME="xlslice_7_Dout">
+        <PORT DIR="I" NAME="c" SIGIS="undef" SIGNAME="xlslice_7_Dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="xlslice_7" PORT="Dout"/>
           </CONNECTIONS>
@@ -6919,7 +6919,7 @@
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_7_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="pmod_encoder_0" PORT="btn"/>
+            <CONNECTION INSTANCE="pmod_encoder_0" PORT="c"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

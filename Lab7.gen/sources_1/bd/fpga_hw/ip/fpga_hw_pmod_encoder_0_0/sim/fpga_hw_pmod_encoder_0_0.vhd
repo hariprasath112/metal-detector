@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:pmod_encoder:1.0
--- IP Revision: 16
+-- IP Revision: 18
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -57,7 +57,7 @@ ENTITY fpga_hw_pmod_encoder_0_0 IS
   PORT (
     a : IN STD_LOGIC;
     b : IN STD_LOGIC;
-    btn : IN STD_LOGIC;
+    c : IN STD_LOGIC;
     sw : IN STD_LOGIC;
     s00_axi_aclk : IN STD_LOGIC;
     s00_axi_aresetn : IN STD_LOGIC;
@@ -94,7 +94,7 @@ ARCHITECTURE fpga_hw_pmod_encoder_0_0_arch OF fpga_hw_pmod_encoder_0_0 IS
     PORT (
       a : IN STD_LOGIC;
       b : IN STD_LOGIC;
-      btn : IN STD_LOGIC;
+      c : IN STD_LOGIC;
       sw : IN STD_LOGIC;
       s00_axi_aclk : IN STD_LOGIC;
       s00_axi_aresetn : IN STD_LOGIC;
@@ -155,7 +155,7 @@ BEGIN
     PORT MAP (
       a => a,
       b => b,
-      btn => btn,
+      c => c,
       sw => sw,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_aresetn => s00_axi_aresetn,

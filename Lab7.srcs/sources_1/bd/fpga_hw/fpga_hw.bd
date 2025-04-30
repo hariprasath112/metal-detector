@@ -1899,7 +1899,7 @@
       "xlslice_7_Dout": {
         "ports": [
           "xlslice_7/Dout",
-          "pmod_encoder_0/btn"
+          "pmod_encoder_0/c"
         ]
       }
     },

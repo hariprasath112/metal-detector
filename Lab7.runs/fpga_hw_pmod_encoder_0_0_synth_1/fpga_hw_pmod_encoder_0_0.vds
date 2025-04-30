@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Tue Apr  1 01:46:36 2025
-# Process ID: 41080
+# Start of session at: Tue Apr 29 18:05:13 2025
+# Process ID: 24632
 # Current directory: D:/EECE351/Lab/Lab7/Lab7.runs/fpga_hw_pmod_encoder_0_0_synth_1
 # Command line: vivado.exe -log fpga_hw_pmod_encoder_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_hw_pmod_encoder_0_0.tcl
 # Log file: D:/EECE351/Lab/Lab7/Lab7.runs/fpga_hw_pmod_encoder_0_0_synth_1/fpga_hw_pmod_encoder_0_0.vds
@@ -11,7 +11,7 @@
 # Running On: Thanh_Vo, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 8, Host memory: 16852 MB
 #-----------------------------------------------------------
 source fpga_hw_pmod_encoder_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1376.438 ; gain = 0.000
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1409.648 ; gain = 0.000
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/EECE351/Lab/ip_repo/pmod_encoder_1.0'.
 WARNING: [IP_Flow 19-3685] Ignored loading user repository 'd:/EECE351/Lab/ip_repo/pmod_encoder_1.0/pmod_encoder_1.0'. The path is contained within another repository.
@@ -29,38 +29,39 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 26080
+INFO: [Synth 8-7075] Helper process launched with PID 24492
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1376.438 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1409.648 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'fpga_hw_pmod_encoder_0_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_pmod_encoder_0_0/synth/fpga_hw_pmod_encoder_0_0.vhd:86]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'pmod_encoder_v1_0' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0.vhd:5' bound to instance 'U0' of component 'pmod_encoder_v1_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_pmod_encoder_0_0/synth/fpga_hw_pmod_encoder_0_0.vhd:156]
-INFO: [Synth 8-638] synthesizing module 'pmod_encoder_v1_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0.vhd:51]
-INFO: [Synth 8-3491] module 'synchronizer' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/src/synchronizer.vhd:35' bound to instance 'sync_a' of component 'synchronizer' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0.vhd:125]
-INFO: [Synth 8-638] synthesizing module 'synchronizer' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/src/synchronizer.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'synchronizer' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/src/synchronizer.vhd:43]
-INFO: [Synth 8-3491] module 'synchronizer' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/src/synchronizer.vhd:35' bound to instance 'sync_b' of component 'synchronizer' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0.vhd:131]
-INFO: [Synth 8-3491] module 'synchronizer' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/src/synchronizer.vhd:35' bound to instance 'sync_btn' of component 'synchronizer' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0.vhd:141]
-INFO: [Synth 8-3491] module 'synchronizer' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/src/synchronizer.vhd:35' bound to instance 'sync_sw' of component 'synchronizer' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0.vhd:148]
+INFO: [Synth 8-3491] module 'pmod_encoder_v1_0' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0.vhd:5' bound to instance 'U0' of component 'pmod_encoder_v1_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_pmod_encoder_0_0/synth/fpga_hw_pmod_encoder_0_0.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'pmod_encoder_v1_0' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0.vhd:51]
+INFO: [Synth 8-3491] module 'synchronizer' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/src/synchronizer.vhd:35' bound to instance 'sync_a' of component 'synchronizer' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'synchronizer' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/src/synchronizer.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'synchronizer' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/src/synchronizer.vhd:43]
+INFO: [Synth 8-3491] module 'synchronizer' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/src/synchronizer.vhd:35' bound to instance 'sync_b' of component 'synchronizer' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0.vhd:131]
+INFO: [Synth 8-3491] module 'synchronizer' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/src/synchronizer.vhd:35' bound to instance 'sync_c' of component 'synchronizer' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0.vhd:141]
+INFO: [Synth 8-3491] module 'synchronizer' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/src/synchronizer.vhd:35' bound to instance 'sync_sw' of component 'synchronizer' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0.vhd:148]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'pmod_encoder_v1_0_S00_AXI' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0_S00_AXI.vhd:5' bound to instance 'pmod_encoder_v1_0_S00_AXI_inst' of component 'pmod_encoder_v1_0_S00_AXI' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0.vhd:154]
-INFO: [Synth 8-638] synthesizing module 'pmod_encoder_v1_0_S00_AXI' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0_S00_AXI.vhd:96]
-INFO: [Synth 8-226] default block is never used [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0_S00_AXI.vhd:245]
-INFO: [Synth 8-226] default block is never used [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0_S00_AXI.vhd:375]
-WARNING: [Synth 8-614] signal 'BTN' is read in the process but is not in the sensitivity list [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0_S00_AXI.vhd:370]
-WARNING: [Synth 8-614] signal 'SW' is read in the process but is not in the sensitivity list [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0_S00_AXI.vhd:370]
-WARNING: [Synth 8-614] signal 'counter' is read in the process but is not in the sensitivity list [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0_S00_AXI.vhd:370]
-WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0_S00_AXI.vhd:370]
-WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0_S00_AXI.vhd:370]
-INFO: [Synth 8-256] done synthesizing module 'pmod_encoder_v1_0_S00_AXI' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0_S00_AXI.vhd:96]
-INFO: [Synth 8-256] done synthesizing module 'pmod_encoder_v1_0' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0.vhd:51]
+INFO: [Synth 8-3491] module 'pmod_encoder_v1_0_S00_AXI' declared at 'd:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0_S00_AXI.vhd:5' bound to instance 'pmod_encoder_v1_0_S00_AXI_inst' of component 'pmod_encoder_v1_0_S00_AXI' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'pmod_encoder_v1_0_S00_AXI' [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0_S00_AXI.vhd:96]
+INFO: [Synth 8-226] default block is never used [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0_S00_AXI.vhd:245]
+INFO: [Synth 8-226] default block is never used [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0_S00_AXI.vhd:375]
+WARNING: [Synth 8-614] signal 'SW' is read in the process but is not in the sensitivity list [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0_S00_AXI.vhd:370]
+WARNING: [Synth 8-614] signal 'counter' is read in the process but is not in the sensitivity list [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0_S00_AXI.vhd:370]
+WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0_S00_AXI.vhd:370]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0_S00_AXI.vhd:370]
+WARNING: [Synth 8-614] signal 'C' is read in the process but is not in the sensitivity list [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0_S00_AXI.vhd:370]
+INFO: [Synth 8-256] done synthesizing module 'pmod_encoder_v1_0_S00_AXI' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0_S00_AXI.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'pmod_encoder_v1_0' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0.vhd:51]
 INFO: [Synth 8-256] done synthesizing module 'fpga_hw_pmod_encoder_0_0' (0#1) [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ip/fpga_hw_pmod_encoder_0_0/synth/fpga_hw_pmod_encoder_0_0.vhd:86]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0_S00_AXI.vhd:238]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0_S00_AXI.vhd:239]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/4fef/hdl/pmod_encoder_v1_0_S00_AXI.vhd:240]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0_S00_AXI.vhd:238]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0_S00_AXI.vhd:239]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0_S00_AXI.vhd:240]
+WARNING: [Synth 8-3848] Net counter in module/entity pmod_encoder_v1_0_S00_AXI does not have driver. [d:/EECE351/Lab/Lab7/Lab7.gen/sources_1/bd/fpga_hw/ipshared/f14e/hdl/pmod_encoder_v1_0_S00_AXI.vhd:135]
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module pmod_encoder_v1_0_S00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module pmod_encoder_v1_0_S00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module pmod_encoder_v1_0_S00_AXI is either unconnected or has no load
@@ -68,63 +69,48 @@ WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module pmod_encoder_v1_0_S00_AXI
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module pmod_encoder_v1_0_S00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module pmod_encoder_v1_0_S00_AXI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1376.438 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1409.648 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1376.438 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1409.648 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1376.438 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1409.648 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1376.438 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1409.648 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1440.031 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1433.316 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 1440.047 ; gain = 0.016
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1434.312 ; gain = 0.996
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1440.047 ; gain = 63.609
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1434.312 ; gain = 24.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1440.047 ; gain = 63.609
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1434.312 ; gain = 24.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1440.047 ; gain = 63.609
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1434.312 ; gain = 24.664
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'currentState_reg' in module 'pmod_encoder_v1_0_S00_AXI'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                        000000001 |                             0000
-                     r10 |                        000000010 |                             0001
-                     r00 |                        000000100 |                             0010
-                     r01 |                        000001000 |                             0011
-                     inc |                        000010000 |                             0111
-                     l01 |                        000100000 |                             0100
-                     l00 |                        001000000 |                             0101
-                     l10 |                        010000000 |                             0110
-                     dec |                        100000000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'currentState_reg' using encoding 'one-hot' in module 'pmod_encoder_v1_0_S00_AXI'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1440.047 ; gain = 63.609
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 1434.312 ; gain = 24.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -138,16 +124,7 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input   32 Bit        Muxes := 1     
 	   4 Input   32 Bit        Muxes := 2     
-	   9 Input    9 Bit        Muxes := 1     
-	   2 Input    9 Bit        Muxes := 14    
-	   3 Input    4 Bit        Muxes := 1     
-	   9 Input    4 Bit        Muxes := 2     
-	   3 Input    3 Bit        Muxes := 3     
-	   2 Input    3 Bit        Muxes := 2     
-	   3 Input    2 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 3     
 	   2 Input    1 Bit        Muxes := 5     
-	   3 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -171,25 +148,25 @@ WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module fpga_hw_pmod_encoder_0_
 WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module fpga_hw_pmod_encoder_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module fpga_hw_pmod_encoder_0_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1440.047 ; gain = 63.609
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1434.312 ; gain = 24.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 1440.047 ; gain = 63.609
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 1434.312 ; gain = 24.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 1440.047 ; gain = 63.609
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 1434.312 ; gain = 24.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 1440.047 ; gain = 63.609
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 1434.312 ; gain = 24.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -207,37 +184,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 1440.047 ; gain = 63.609
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1434.312 ; gain = 24.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 1440.047 ; gain = 63.609
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1434.312 ; gain = 24.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 1440.047 ; gain = 63.609
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1434.312 ; gain = 24.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 1440.047 ; gain = 63.609
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1434.312 ; gain = 24.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 1440.047 ; gain = 63.609
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1434.312 ; gain = 24.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 1440.047 ; gain = 63.609
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1434.312 ; gain = 24.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -250,46 +227,40 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |CARRY4 |     8|
-|2     |LUT1   |     2|
-|3     |LUT2   |    32|
-|4     |LUT3   |     4|
-|5     |LUT4   |    49|
-|6     |LUT5   |     2|
-|7     |LUT6   |     9|
-|8     |MUXF7  |     2|
-|9     |FDCE   |    37|
-|10    |FDPE   |     4|
-|11    |FDRE   |    83|
-|12    |FDSE   |     3|
-+------+-------+------+
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     1|
+|3     |LUT3 |    30|
+|4     |LUT4 |    11|
+|5     |LUT5 |     2|
+|6     |LUT6 |     4|
+|7     |FDRE |    83|
+|8     |FDSE |     3|
++------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 1440.047 ; gain = 63.609
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1434.312 ; gain = 24.664
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:01:09 . Memory (MB): peak = 1440.047 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 1440.047 ; gain = 63.609
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1434.312 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:48 . Memory (MB): peak = 1434.312 ; gain = 24.664
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1440.047 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1434.312 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1440.047 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1434.312 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 30fd1781
+Synth Design complete, checksum: 1477ece3
 INFO: [Common 17-83] Releasing license: Synthesis
-40 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+36 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:53 . Memory (MB): peak = 1440.047 ; gain = 63.609
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:55 . Memory (MB): peak = 1434.312 ; gain = 24.664
 INFO: [Common 17-1381] The checkpoint 'D:/EECE351/Lab/Lab7/Lab7.runs/fpga_hw_pmod_encoder_0_0_synth_1/fpga_hw_pmod_encoder_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP fpga_hw_pmod_encoder_0_0, cache-ID = 43fcf190a946fb75
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP fpga_hw_pmod_encoder_0_0, cache-ID = 4ecd6db7449d73a2
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
 INFO: [Common 17-1381] The checkpoint 'D:/EECE351/Lab/Lab7/Lab7.runs/fpga_hw_pmod_encoder_0_0_synth_1/fpga_hw_pmod_encoder_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file fpga_hw_pmod_encoder_0_0_utilization_synth.rpt -pb fpga_hw_pmod_encoder_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr  1 01:49:09 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 29 18:06:20 2025...

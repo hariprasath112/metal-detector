@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
---Date        : Tue Apr  1 01:46:21 2025
+--Date        : Tue Apr 29 18:05:01 2025
 --Host        : Thanh_Vo running 64-bit major release  (build 9200)
 --Command     : generate_target fpga_hw.bd
 --Design      : fpga_hw
@@ -3139,7 +3139,7 @@ architecture STRUCTURE of fpga_hw is
   port (
     a : in STD_LOGIC;
     b : in STD_LOGIC;
-    btn : in STD_LOGIC;
+    c : in STD_LOGIC;
     sw : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_aresetn : in STD_LOGIC;
@@ -3850,7 +3850,7 @@ pmod_encoder_0: component fpga_hw_pmod_encoder_0_0
      port map (
       a => xlslice_3_Dout(0),
       b => xlslice_2_Dout(0),
-      btn => xlslice_7_Dout(0),
+      c => xlslice_7_Dout(0),
       s00_axi_aclk => microblaze_0_Clk,
       s00_axi_araddr(3 downto 0) => microblaze_0_axi_periph_M07_AXI_ARADDR(3 downto 0),
       s00_axi_aresetn => rst_clk_wiz_1_100M_peripheral_aresetn(0),

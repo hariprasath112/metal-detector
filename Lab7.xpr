@@ -102,17 +102,17 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_axi_gpio_1_1/fpga_hw_axi_gpio_1_1.xci">
-          <Proxy FileSetName="fpga_hw_axi_gpio_1_1"/>
+        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_mdm_1_0/fpga_hw_mdm_1_0.xci">
+          <Proxy FileSetName="fpga_hw_mdm_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_pmod_encoder_0_0/fpga_hw_pmod_encoder_0_0.xci">
+          <Proxy FileSetName="fpga_hw_pmod_encoder_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_ilmb_v10_0/fpga_hw_ilmb_v10_0.xci">
+          <Proxy FileSetName="fpga_hw_ilmb_v10_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_dlmb_v10_0/fpga_hw_dlmb_v10_0.xci">
           <Proxy FileSetName="fpga_hw_dlmb_v10_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_axi_gpio_2_0/fpga_hw_axi_gpio_2_0.xci">
-          <Proxy FileSetName="fpga_hw_axi_gpio_2_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_rst_clk_wiz_1_100M_0/fpga_hw_rst_clk_wiz_1_100M_0.xci">
-          <Proxy FileSetName="fpga_hw_rst_clk_wiz_1_100M_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_microblaze_0_0/fpga_hw_microblaze_0_0.xci">
           <Proxy FileSetName="fpga_hw_microblaze_0_0"/>
@@ -120,32 +120,32 @@
         <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_axi_uartlite_0_0/fpga_hw_axi_uartlite_0_0.xci">
           <Proxy FileSetName="fpga_hw_axi_uartlite_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_ilmb_bram_if_cntlr_0/fpga_hw_ilmb_bram_if_cntlr_0.xci">
-          <Proxy FileSetName="fpga_hw_ilmb_bram_if_cntlr_0"/>
+        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_axi_gpio_0_0/fpga_hw_axi_gpio_0_0.xci">
+          <Proxy FileSetName="fpga_hw_axi_gpio_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_rst_clk_wiz_1_100M_0/fpga_hw_rst_clk_wiz_1_100M_0.xci">
+          <Proxy FileSetName="fpga_hw_rst_clk_wiz_1_100M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_axi_gpio_2_0/fpga_hw_axi_gpio_2_0.xci">
+          <Proxy FileSetName="fpga_hw_axi_gpio_2_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_axi_gpio_3_0/fpga_hw_axi_gpio_3_0.xci">
+          <Proxy FileSetName="fpga_hw_axi_gpio_3_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_axi_gpio_1_1/fpga_hw_axi_gpio_1_1.xci">
+          <Proxy FileSetName="fpga_hw_axi_gpio_1_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_clk_wiz_1_0/fpga_hw_clk_wiz_1_0.xci">
           <Proxy FileSetName="fpga_hw_clk_wiz_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_mdm_1_0/fpga_hw_mdm_1_0.xci">
-          <Proxy FileSetName="fpga_hw_mdm_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_ilmb_v10_0/fpga_hw_ilmb_v10_0.xci">
-          <Proxy FileSetName="fpga_hw_ilmb_v10_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_axi_gpio_0_0/fpga_hw_axi_gpio_0_0.xci">
-          <Proxy FileSetName="fpga_hw_axi_gpio_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_lmb_bram_0/fpga_hw_lmb_bram_0.xci">
-          <Proxy FileSetName="fpga_hw_lmb_bram_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_dlmb_bram_if_cntlr_0/fpga_hw_dlmb_bram_if_cntlr_0.xci">
           <Proxy FileSetName="fpga_hw_dlmb_bram_if_cntlr_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_pmod_encoder_0_0/fpga_hw_pmod_encoder_0_0.xci">
-          <Proxy FileSetName="fpga_hw_pmod_encoder_0_0"/>
+        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_ilmb_bram_if_cntlr_0/fpga_hw_ilmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="fpga_hw_ilmb_bram_if_cntlr_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_axi_gpio_3_0/fpga_hw_axi_gpio_3_0.xci">
-          <Proxy FileSetName="fpga_hw_axi_gpio_3_0"/>
+        <CompFileExtendedInfo CompFileName="fpga_hw.bd" FileRelPathName="ip/fpga_hw_lmb_bram_0/fpga_hw_lmb_bram_0.xci">
+          <Proxy FileSetName="fpga_hw_lmb_bram_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/fpga_hw/hdl/fpga_hw_wrapper.vhd">

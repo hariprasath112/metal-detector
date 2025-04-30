@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:pmod_encoder:1.0
--- IP Revision: 16
+-- IP Revision: 18
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -57,7 +57,7 @@ ENTITY fpga_hw_pmod_encoder_0_0 IS
   PORT (
     a : IN STD_LOGIC;
     b : IN STD_LOGIC;
-    btn : IN STD_LOGIC;
+    c : IN STD_LOGIC;
     sw : IN STD_LOGIC;
     s00_axi_aclk : IN STD_LOGIC;
     s00_axi_aresetn : IN STD_LOGIC;
@@ -94,7 +94,7 @@ ARCHITECTURE fpga_hw_pmod_encoder_0_0_arch OF fpga_hw_pmod_encoder_0_0 IS
     PORT (
       a : IN STD_LOGIC;
       b : IN STD_LOGIC;
-      btn : IN STD_LOGIC;
+      c : IN STD_LOGIC;
       sw : IN STD_LOGIC;
       s00_axi_aclk : IN STD_LOGIC;
       s00_axi_aresetn : IN STD_LOGIC;
@@ -124,7 +124,7 @@ ARCHITECTURE fpga_hw_pmod_encoder_0_0_arch OF fpga_hw_pmod_encoder_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF fpga_hw_pmod_encoder_0_0_arch : ARCHITECTURE IS "fpga_hw_pmod_encoder_0_0,pmod_encoder_v1_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF fpga_hw_pmod_encoder_0_0_arch: ARCHITECTURE IS "fpga_hw_pmod_encoder_0_0,pmod_encoder_v1_0,{x_ipProduct=Vivado 2022.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=pmod_encoder,x_ipVersion=1.0,x_ipCoreRevision=16,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}";
+  ATTRIBUTE CORE_GENERATION_INFO OF fpga_hw_pmod_encoder_0_0_arch: ARCHITECTURE IS "fpga_hw_pmod_encoder_0_0,pmod_encoder_v1_0,{x_ipProduct=Vivado 2022.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=pmod_encoder,x_ipVersion=1.0,x_ipCoreRevision=18,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axi_aclk: SIGNAL IS "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, INSERT_VIP 0";
@@ -161,7 +161,7 @@ BEGIN
     PORT MAP (
       a => a,
       b => b,
-      btn => btn,
+      c => c,
       sw => sw,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_aresetn => s00_axi_aresetn,

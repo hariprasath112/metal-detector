@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date                      : Tue Apr  1 01:52:33 2025
+| Date                      : Tue Apr 29 18:10:24 2025
 | Host                      : Thanh_Vo running 64-bit major release  (build 9200)
 | Command                   : report_io -file fpga_hw_wrapper_io_placed.rpt
 | Design                    : fpga_hw_wrapper
